@@ -1,0 +1,305 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Image Processing TOOLBOX
+\end_layout
+
+\begin_layout Author
+Danie Jianah SONIZARA
+\end_layout
+
+\begin_layout Author
+Supervised by Abd El Rahman SHABAYEK
+\end_layout
+
+\begin_layout Part*
+I.
+ MATLAB ToolBox
+\end_layout
+
+\begin_layout Section*
+1.
+ Graphical user interface 
+\end_layout
+
+\begin_layout Standard
+The matlab GUI is presented as a table with 3 tabs where every input chosen
+ has its own different tab.
+ The GUI is shown as follow:
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename ../../../../../Users/dsoni/Desktop/imageGUImatlab.PNG
+	lyxscale 30
+	scale 50
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename ../../../../../Users/dsoni/Desktop/videoGUImatlab.PNG
+	lyxscale 30
+	scale 30
+
+\end_inset
+
+
+\noun on
+
+\begin_inset Graphics
+	filename ../../../../../Users/dsoni/Desktop/cameraGUImatlab.PNG
+	lyxscale 30
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+2.
+ Tasks 
+\end_layout
+
+\begin_layout Subsection*
+2.1.
+ Basics 
+\end_layout
+
+\begin_layout Subsubsection*
+2.1.1.Image tab Load image
+\end_layout
+
+\begin_layout Standard
+Click on the tab 
+\begin_inset Formula $Image$
+\end_inset
+
+ , then the button 
+\begin_inset Formula $Load$
+\end_inset
+
+ , then choose any image from your computer.
+ The result will be shown in the first axes window 
+\end_layout
+
+\begin_layout Subsubsection*
+2.1.2.
+ Load video
+\end_layout
+
+\begin_layout Standard
+Click on the button 
+\begin_inset Formula $Browse$
+\end_inset
+
+ , to get the file path of the video you wan to watch .
+ Then click on 
+\begin_inset Formula $Start$
+\end_inset
+
+ to start the video.
+ The video can be observed in the top window
+\end_layout
+
+\begin_layout Subsubsection*
+2.1.3.
+ Save Image
+\end_layout
+
+\begin_layout Subsection*
+2.2.
+ Changing the colorspace 
+\end_layout
+
+\begin_layout Subsubsection*
+2.2.1.
+ Original image 
+\end_layout
+
+\begin_layout Standard
+By clicking on this, it will return the original image 
+\end_layout
+
+\begin_layout Subsubsection*
+2.2.2.
+ Grayscale image 
+\end_layout
+
+\begin_layout Subsubsection*
+2.2.3.
+ YCBR image 
+\end_layout
+
+\begin_layout Subsection*
+2.3.
+ Add noise 
+\end_layout
+
+\begin_layout Subsection*
+2.4.
+ Histogram
+\end_layout
+
+\begin_layout Subsection*
+2.5.
+ Morphological operators 
+\end_layout
+
+\begin_layout Subsection*
+2.6.
+ Filtering 
+\end_layout
+
+\begin_layout Subsection*
+2.7.
+ Edge detection 
+\end_layout
+
+\begin_layout Subsection*
+2.8.Hough Transform
+\end_layout
+
+\begin_layout Subsection*
+2.9.
+ Corner extraction 
+\end_layout
+
+\begin_layout Subsection*
+2.10.
+ Shape Descriptor
+\end_layout
+
+\begin_layout Subsection*
+2.11.
+ Image Matching 
+\end_layout
+
+\begin_layout Subsection*
+2.12.
+ Epipolar geometry 
+\end_layout
+
+\begin_layout Subsection*
+2.4.
+ Face Detection
+\end_layout
+
+\begin_layout Subsection*
+2.4.
+ Face Recognition 
+\end_layout
+
+\begin_layout Part*
+II.
+ Python using ToolBox
+\end_layout
+
+\begin_layout Section*
+1.
+ GUI user interface 
+\end_layout
+
+\begin_layout Section*
+2.
+ Tasks 
+\end_layout
+
+\begin_layout Subsection*
+2.1.
+ Display Input 
+\end_layout
+
+\begin_layout Subsubsection*
+2.1.1.
+ Load image
+\end_layout
+
+\begin_layout Subsubsection*
+2.1.2.
+ Load video
+\end_layout
+
+\begin_layout Subsubsection*
+2.1.3.
+ Show Live camera 
+\end_layout
+
+\end_body
+\end_document
