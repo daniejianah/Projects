@@ -331,7 +331,7 @@ Original , grayscale and ycbrc image (left to right)
 \begin_inset Graphics
 	filename Report/Lyx/originaM.PNG
 	lyxscale 50
-	scale 40
+	scale 30
 
 \end_inset
 
@@ -339,7 +339,7 @@ Original , grayscale and ycbrc image (left to right)
 \begin_inset Graphics
 	filename Report/Lyx/greyM.PNG
 	lyxscale 50
-	scale 40
+	scale 30
 
 \end_inset
 
@@ -347,7 +347,7 @@ Original , grayscale and ycbrc image (left to right)
 \begin_inset Graphics
 	filename Report/Lyx/ycbrM.PNG
 	lyxscale 50
-	scale 40
+	scale 30
 
 \end_inset
 
@@ -371,24 +371,16 @@ Here we add different noise ( gaussian, salt and pepper , poisson and speckle)
 \end_layout
 
 \begin_layout Standard
-Inside the 
-\begin_inset Formula $Add\,noise$
-\end_inset
-
- box , click on the arrow then on 
-\begin_inset Formula $Gaussian$
-\end_inset
-
- .
- The result is shown in the down window as shown in figure 3.
-\end_layout
-
-\begin_layout Standard
 \align center
 \begin_inset Float figure
 wide false
 sideways false
 status open
+
+\begin_layout Plain Layout
+\align center
+
+\end_layout
 
 \begin_layout Plain Layout
 \begin_inset Caption Standard
@@ -402,17 +394,13 @@ Gaussian noise on original , grayscale and ycbrc image (left to right)
 
 \end_layout
 
-\begin_layout Plain Layout
-
-\end_layout
-
 \end_inset
 
 
 \begin_inset Graphics
 	filename Report/Lyx/OriginalGaussianM.PNG
 	lyxscale 50
-	scale 40
+	scale 50
 
 \end_inset
 
@@ -420,7 +408,7 @@ Gaussian noise on original , grayscale and ycbrc image (left to right)
 \begin_inset Graphics
 	filename Report/Lyx/greyGaussianM.PNG
 	lyxscale 50
-	scale 40
+	scale 50
 
 \end_inset
 
@@ -428,7 +416,7 @@ Gaussian noise on original , grayscale and ycbrc image (left to right)
 \begin_inset Graphics
 	filename Report/Lyx/ycbrGaussianM.PNG
 	lyxscale 50
-	scale 40
+	scale 50
 
 \end_inset
 
@@ -438,19 +426,6 @@ Gaussian noise on original , grayscale and ycbrc image (left to right)
 \begin_layout Subsubsection*
 2.3.2.
  Salt and Pepper noise 
-\end_layout
-
-\begin_layout Standard
-Inside the 
-\begin_inset Formula $Add\,noise$
-\end_inset
-
- box , click on the arrow then on 
-\begin_inset Formula $Salt\&Pepper$
-\end_inset
-
- .
- The result is shown in the down window as shown in figure 3.
 \end_layout
 
 \begin_layout Standard
@@ -482,7 +457,7 @@ Salt&Pepper noise to original , grayscale and ycbrc (left to right)
 \begin_inset Graphics
 	filename Report/Lyx/originalsaltpepperM.PNG
 	lyxscale 50
-	scale 40
+	scale 50
 
 \end_inset
 
@@ -490,7 +465,7 @@ Salt&Pepper noise to original , grayscale and ycbrc (left to right)
 \begin_inset Graphics
 	filename Report/Lyx/greysaltpepperM.PNG
 	lyxscale 50
-	scale 40
+	scale 50
 
 \end_inset
 
@@ -498,7 +473,7 @@ Salt&Pepper noise to original , grayscale and ycbrc (left to right)
 \begin_inset Graphics
 	filename Report/Lyx/ycbrsaltpepper.PNG
 	lyxscale 50
-	scale 40
+	scale 50
 
 \end_inset
 

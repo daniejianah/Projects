@@ -331,7 +331,7 @@ Original , grayscale and ycbrc image (left to right)
 \begin_inset Graphics
 	filename Report/Lyx/originaM.PNG
 	lyxscale 50
-	scale 30
+	scale 40
 
 \end_inset
 
@@ -339,7 +339,7 @@ Original , grayscale and ycbrc image (left to right)
 \begin_inset Graphics
 	filename Report/Lyx/greyM.PNG
 	lyxscale 50
-	scale 30
+	scale 40
 
 \end_inset
 
@@ -347,7 +347,7 @@ Original , grayscale and ycbrc image (left to right)
 \begin_inset Graphics
 	filename Report/Lyx/ycbrM.PNG
 	lyxscale 50
-	scale 30
+	scale 40
 
 \end_inset
 
@@ -360,13 +360,29 @@ Original , grayscale and ycbrc image (left to right)
 \end_layout
 
 \begin_layout Standard
-Here we add different noise ( gaussian, sato a basic image and watch the
- difference
+Here we add different noise ( gaussian, salt and pepper , poisson and speckle)
+ to a basic image and watch the difference.
+ We can see as an example the following step on how to compute it.
 \end_layout
 
 \begin_layout Subsubsection*
 2.3.1.
  Gaussian noise
+\end_layout
+
+\begin_layout Standard
+Inside the 
+\begin_inset Formula $Addnoise$
+\end_inset
+
+ box , click on the arrow then on 
+\begin_inset Formula $rgb2ycbrc$
+\end_inset
+
+ .
+ This function will converts converts the RGB color space values in rgbmap
+ to the YCbCr color space.
+ The result is shown in the down window as shown in figure 2.
 \end_layout
 
 \begin_layout Standard
@@ -399,7 +415,7 @@ Gaussian noise on original , grayscale and ycbrc image (left to right)
 \begin_inset Graphics
 	filename Report/Lyx/OriginalGaussianM.PNG
 	lyxscale 50
-	scale 50
+	scale 40
 
 \end_inset
 
@@ -407,7 +423,7 @@ Gaussian noise on original , grayscale and ycbrc image (left to right)
 \begin_inset Graphics
 	filename Report/Lyx/greyGaussianM.PNG
 	lyxscale 50
-	scale 50
+	scale 40
 
 \end_inset
 
@@ -415,7 +431,7 @@ Gaussian noise on original , grayscale and ycbrc image (left to right)
 \begin_inset Graphics
 	filename Report/Lyx/ycbrGaussianM.PNG
 	lyxscale 50
-	scale 50
+	scale 40
 
 \end_inset
 
@@ -456,7 +472,7 @@ Salt&Pepper noise to original , grayscale and ycbrc (left to right)
 \begin_inset Graphics
 	filename Report/Lyx/originalsaltpepperM.PNG
 	lyxscale 50
-	scale 50
+	scale 40
 
 \end_inset
 
@@ -464,7 +480,7 @@ Salt&Pepper noise to original , grayscale and ycbrc (left to right)
 \begin_inset Graphics
 	filename Report/Lyx/greysaltpepperM.PNG
 	lyxscale 50
-	scale 50
+	scale 40
 
 \end_inset
 
@@ -472,7 +488,7 @@ Salt&Pepper noise to original , grayscale and ycbrc (left to right)
 \begin_inset Graphics
 	filename Report/Lyx/ycbrsaltpepper.PNG
 	lyxscale 50
-	scale 50
+	scale 40
 
 \end_inset
 
