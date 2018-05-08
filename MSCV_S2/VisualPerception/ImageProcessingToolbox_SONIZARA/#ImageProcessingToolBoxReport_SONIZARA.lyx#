@@ -99,6 +99,10 @@ to learn OpenCV as one of the most important computer vision open source
 
 \begin_layout Enumerate
 to test and implement some important computer vision algorithms.
+\begin_inset Newpage newpage
+\end_inset
+
+
 \end_layout
 
 \begin_layout Part*
@@ -209,13 +213,26 @@ Click on the button
  Save Image
 \end_layout
 
+\begin_layout Standard
+The button 
+\begin_inset Formula $Save$
+\end_inset
+
+ is used to save any output image anywhere in the desktop.
+ 
+\end_layout
+
 \begin_layout Subsubsection*
 2.1.4.
  Contour finding 
 \end_layout
 
 \begin_layout Standard
-By clicking on the but
+By clicking on the button 
+\begin_inset Formula $Contour\,Finding$
+\end_inset
+
+, we are able to observe drawn on the image the contours of the object.
 \end_layout
 
 \begin_layout Standard
@@ -889,28 +906,10 @@ Figure 10: Harris and FAST corner extraction
 \end_layout
 
 \begin_layout Subsection*
-2.10.
- Shape Descriptor
-\end_layout
+\begin_inset Newpage newpage
+\end_inset
 
-\begin_layout Subsection*
-2.11.
- Image Matching 
-\end_layout
 
-\begin_layout Subsection*
-2.12.
- Epipolar geometry 
-\end_layout
-
-\begin_layout Subsection*
-2.4.
- Face Detection
-\end_layout
-
-\begin_layout Subsection*
-2.4.
- Face Recognition 
 \end_layout
 
 \begin_layout Part*
@@ -920,7 +919,47 @@ II.
 
 \begin_layout Section*
 1.
- GUI user interface 
+ Basics
+\end_layout
+
+\begin_layout Subsection*
+1.1.
+ GUI user interface - Menu task bar 
+\end_layout
+
+\begin_layout Standard
+Shown below is the graphical user interface of the toolbox in python.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename Report/Lyx/GUIP.PNG
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+1.2.
+ Input
+\end_layout
+
+\begin_layout Standard
+We can choose one on this following input :
+\end_layout
+
+\begin_layout Enumerate
+Load image 
+\end_layout
+
+\begin_layout Enumerate
+Load video
+\end_layout
+
+\begin_layout Enumerate
+Load Live camera
 \end_layout
 
 \begin_layout Section*
@@ -930,22 +969,264 @@ II.
 
 \begin_layout Subsection*
 2.1.
- Display Input 
+ File
 \end_layout
 
-\begin_layout Subsubsection*
-2.1.1.
- Load image
+\begin_layout Standard
+Load an image 
 \end_layout
 
-\begin_layout Subsubsection*
-2.1.2.
- Load video
+\begin_layout Standard
+\begin_inset Graphics
+	filename Report/Lyx/imageP.PNG
+	scale 50
+
+\end_inset
+
+
 \end_layout
 
-\begin_layout Subsubsection*
-2.1.3.
- Show Live camera 
+\begin_layout Subsection*
+2.2.
+ ROI
+\end_layout
+
+\begin_layout Standard
+Here we choose a logo and add it to our image.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename Report/Lyx/logoP.PNG
+	lyxscale 35
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+2.3.
+ Noise 
+\end_layout
+
+\begin_layout Standard
+Add salt and Pepper noise 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename Report/Lyx/SaltpepperP.PNG
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+2.4.
+ Color Space 
+\end_layout
+
+\begin_layout Itemize
+Change the colorspace into Gray
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename Report/Lyx/rgb2greyP.PNG
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Change the Rgb image to YCBRC image 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename Report/Lyx/rgb2ycbrcP.PNG
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+2.5.
+ Histogram
+\end_layout
+
+\begin_layout Subsection*
+2.6.
+ Morphological operators 
+\end_layout
+
+\begin_layout Itemize
+Dilatation 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename Report/Lyx/dilateP.PNG
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Erosion 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename Report/Lyx/erosionP.PNG
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Opening 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename Report/Lyx/openP.PNG
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Closing 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename Report/Lyx/closeP.PNG
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+2.7.
+ Blur
+\end_layout
+
+\begin_layout Itemize
+Averaging 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename Report/Lyx/averagingP.PNG
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Gaussian Blur
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename Report/Lyx/gaussianBlurP.PNG
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Median Blur 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename Report/Lyx/Median BlurP.PNG
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+2.8.
+ Edge detection 
+\end_layout
+
+\begin_layout Itemize
+Sobel
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename Report/Lyx/sobelP.PNG
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Canny 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename Report/Lyx/cannyP.PNG
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+2.9.
+ Hough Transform 
+\end_layout
+
+\begin_layout Subsection*
+2.10.
+ Shape Descriptors 
+\end_layout
+
+\begin_layout Itemize
+Finding contour
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename Report/Lyx/contourP.PNG
+	scale 50
+
+\end_inset
+
+
 \end_layout
 
 \end_body
