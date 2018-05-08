@@ -124,6 +124,7 @@ function LoadImage_Callback(hObject, eventdata, handles)
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
 %% Here we load an image from any folder in the Desktop
+cla reset;
 global im im2
 [path,user_cance] =imgetfile();
 if user_cance

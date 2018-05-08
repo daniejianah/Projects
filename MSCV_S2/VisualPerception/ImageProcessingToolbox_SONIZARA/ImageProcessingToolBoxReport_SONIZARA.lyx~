@@ -121,35 +121,11 @@ The matlab GUI is presented as a table with 3 tabs
 \end_layout
 
 \begin_layout Standard
+Figure 1: GUI image tab , video tab, camera tab (left to right)
+\end_layout
+
+\begin_layout Standard
 \align center
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-GUI image tab , video tab, camera tab (left to right)
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
 \begin_inset Graphics
 	filename Report/Lyx/imageGUImatlab.PNG
 	lyxscale 30
@@ -296,34 +272,12 @@ Inside the
 \end_layout
 
 \begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-
+Note : Don't forget to choose the colorspace everytime you make a task
 \end_layout
 
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Original , grayscale and ycbrc image (left to right)
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
+\begin_layout Standard
+\align center
+Figure 2: Original , grayscale and ycbrc image (left to right)
 \end_layout
 
 \begin_layout Standard
@@ -331,7 +285,7 @@ Original , grayscale and ycbrc image (left to right)
 \begin_inset Graphics
 	filename Report/Lyx/originaM.PNG
 	lyxscale 50
-	scale 30
+	scale 40
 
 \end_inset
 
@@ -339,7 +293,7 @@ Original , grayscale and ycbrc image (left to right)
 \begin_inset Graphics
 	filename Report/Lyx/greyM.PNG
 	lyxscale 50
-	scale 30
+	scale 40
 
 \end_inset
 
@@ -347,7 +301,7 @@ Original , grayscale and ycbrc image (left to right)
 \begin_inset Graphics
 	filename Report/Lyx/ycbrM.PNG
 	lyxscale 50
-	scale 30
+	scale 40
 
 \end_inset
 
@@ -371,36 +325,30 @@ Here we add different noise ( gaussian, salt and pepper , poisson and speckle)
 \end_layout
 
 \begin_layout Standard
-\align center
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Gaussian noise on original , grayscale and ycbrc image (left to right)
-\end_layout
-
+Inside the 
+\begin_inset Formula $Add\,noise$
 \end_inset
 
-
-\end_layout
-
+ box , click on the arrow then on 
+\begin_inset Formula $Gaussian$
 \end_inset
 
+ .
+ The result is shown in the down window as shown in figure 3.
+\end_layout
 
+\begin_layout Standard
+\align center
+Figure 3: Gaussian noise on original , grayscale and ycbrc image (left to
+ right)
+\end_layout
+
+\begin_layout Standard
+\align center
 \begin_inset Graphics
 	filename Report/Lyx/OriginalGaussianM.PNG
 	lyxscale 50
-	scale 50
+	scale 40
 
 \end_inset
 
@@ -408,7 +356,7 @@ Gaussian noise on original , grayscale and ycbrc image (left to right)
 \begin_inset Graphics
 	filename Report/Lyx/greyGaussianM.PNG
 	lyxscale 50
-	scale 50
+	scale 40
 
 \end_inset
 
@@ -416,7 +364,7 @@ Gaussian noise on original , grayscale and ycbrc image (left to right)
 \begin_inset Graphics
 	filename Report/Lyx/ycbrGaussianM.PNG
 	lyxscale 50
-	scale 50
+	scale 40
 
 \end_inset
 
@@ -429,35 +377,29 @@ Gaussian noise on original , grayscale and ycbrc image (left to right)
 \end_layout
 
 \begin_layout Standard
+Inside the 
+\begin_inset Formula $Add\,noise$
+\end_inset
+
+ box , click on the arrow then on 
+\begin_inset Formula $Salt\&Pepper$
+\end_inset
+
+ .
+ The result is shown in the down window as shown in figure 4.
+\end_layout
+
+\begin_layout Standard
 \align center
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-
+Figure 4: Salt&Pepper noise to original , grayscale and ycbrc (left to right)
 \end_layout
 
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Salt&Pepper noise to original , grayscale and ycbrc (left to right)
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
+\begin_layout Standard
+\align center
 \begin_inset Graphics
 	filename Report/Lyx/originalsaltpepperM.PNG
 	lyxscale 50
-	scale 50
+	scale 40
 
 \end_inset
 
@@ -465,7 +407,7 @@ Salt&Pepper noise to original , grayscale and ycbrc (left to right)
 \begin_inset Graphics
 	filename Report/Lyx/greysaltpepperM.PNG
 	lyxscale 50
-	scale 50
+	scale 40
 
 \end_inset
 
@@ -473,7 +415,7 @@ Salt&Pepper noise to original , grayscale and ycbrc (left to right)
 \begin_inset Graphics
 	filename Report/Lyx/ycbrsaltpepper.PNG
 	lyxscale 50
-	scale 50
+	scale 40
 
 \end_inset
 
@@ -485,9 +427,150 @@ Salt&Pepper noise to original , grayscale and ycbrc (left to right)
  Histogram
 \end_layout
 
+\begin_layout Standard
+Before implementing the histogram, it is mandatory to choose a colorspace
+ because the result will depend on it .
+ Refer to the paragraph 2.2 to change the colorspace.
+\end_layout
+
+\begin_layout Subsubsection*
+2.4.1.
+ Display image Histogram 
+\end_layout
+
+\begin_layout Standard
+For instance, we will choose to keep the original image.
+ Inside the 
+\begin_inset Formula $Histogram$
+\end_inset
+
+ box , click on the arrow then on 
+\begin_inset Formula $Image\,Histogram$
+\end_inset
+
+ .
+ The function will plot the histogram of the image as shown in the down
+ window as shown in figure 5.
+\end_layout
+
+\begin_layout Subsubsection*
+2.4.2.
+ Display image Histogram 
+\end_layout
+
+\begin_layout Standard
+Inside the 
+\begin_inset Formula $Histogram$
+\end_inset
+
+ box , click on the arrow then on 
+\begin_inset Formula $Histogram\,Equalization$
+\end_inset
+
+.
+ This function enhances the contrast of the original image using histogram
+ equalization .
+ The ploting and the final image result is shown in the down window as shown
+ in figure 5.
+\end_layout
+
+\begin_layout Standard
+\align center
+Figure 5: Plotting the image histogram, the histogram equalization and show
+ the image after histogram equalization (left to right)
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename Report/Lyx/originalhistoM.PNG
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+ 
+\begin_inset Graphics
+	filename Report/Lyx/histequalizeM.PNG
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename Report/Lyx/originalequalazationM.PNG
+	lyxscale 40
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection*
 2.5.
  Morphological operators 
+\end_layout
+
+\begin_layout Standard
+Binary images may contain numerous imperfections.
+ In particular, the binary regions produced by simple thresholding are distorted
+ by noise and texture.
+ Morphological image processing pursues the goals of removing these imperfection
+s by accounting for the form and structure of the image.
+ So here we will applying different morphological operators to observe their
+ different effect to the image.
+\end_layout
+
+\begin_layout Standard
+To do that we will use the grayscale image (color space) then inside the
+ 
+\begin_inset Formula $Morphological\,operators$
+\end_inset
+
+ box , click on the arrow and choose the operator you want to apply to the
+ inage .
+ The results are shown in the figure 6.
+\end_layout
+
+\begin_layout Standard
+Figure 6: Dilatation, Erosion , Opening, Closing (left to right)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename Report/Lyx/dilateM.PNG
+	lyxscale 40
+	scale 35
+
+\end_inset
+
+ 
+\begin_inset Graphics
+	filename Report/Lyx/openM.PNG
+	lyxscale 40
+	scale 35
+
+\end_inset
+
+ 
+\begin_inset Graphics
+	filename Report/Lyx/openM.PNG
+	lyxscale 40
+	scale 35
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename Report/Lyx/closeM.PNG
+	lyxscale 40
+	scale 35
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection*
@@ -495,18 +578,294 @@ Salt&Pepper noise to original , grayscale and ycbrc (left to right)
  Filtering 
 \end_layout
 
+\begin_layout Standard
+In this part we want to blur , to smooth the image by applyind different
+ filter on it.
+\end_layout
+
+\begin_layout Standard
+To do that we will use the grayscale image (color space) then inside the
+ 
+\begin_inset Formula $Filtering$
+\end_inset
+
+ box , click on the arrow and choose the filter you want to apply to the
+ inage between 
+\begin_inset Formula $Gaussian$
+\end_inset
+
+, 
+\begin_inset Formula $Laplacian$
+\end_inset
+
+, 
+\begin_inset Formula $Prewitt$
+\end_inset
+
+ and 
+\begin_inset Formula $Sobel$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+In this example we will keep the original image color space.
+ The results are shown in the figure 7.
+\end_layout
+
+\begin_layout Standard
+Figure 7: Gaussian , Laplacian , Prewitt, Sobel Bluring (left to right)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename Report/Lyx/GaussianFM.PNG
+	lyxscale 30
+	scale 35
+
+\end_inset
+
+ 
+\begin_inset Graphics
+	filename Report/Lyx/LaplacianFM.PNG
+	lyxscale 30
+	scale 35
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename Report/Lyx/PrewittFM.PNG
+	lyxscale 30
+	scale 35
+
+\end_inset
+
+ 
+\begin_inset Graphics
+	filename Report/Lyx/sobelFM.PNG
+	lyxscale 30
+	scale 35
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection*
 2.7.
  Edge detection 
 \end_layout
 
+\begin_layout Standard
+Edge detection is a fundamental tool in image processing, machine vision
+ and computer vision, particularly in the areas of feature detection and
+ feature extraction.
+ In the ideal case, the result of applying an edge detector to an image
+ may lead to a set of connected curves that indicate the boundaries of objects,
+ the boundaries of surface.
+\end_layout
+
+\begin_layout Standard
+To apply the edge detector operators on the image you must specify 
+\begin_inset Formula $rgb2gray$
+\end_inset
+
+ as colorspace then inside the 
+\begin_inset Formula $Edge\,detection$
+\end_inset
+
+ box , click on the arrow then choose the operator you want to apply to
+ the inage between 
+\begin_inset Formula $Sobel$
+\end_inset
+
+.
+ 
+\begin_inset Formula $Prewitt$
+\end_inset
+
+, 
+\begin_inset Formula $Roberts$
+\end_inset
+
+ and 
+\begin_inset Formula $Canny$
+\end_inset
+
+.
+ The results are shown in the figure 8.
+\end_layout
+
+\begin_layout Standard
+Figure 8: Sobel, Prewitt , Roberts, Canny (left to right)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename Report/Lyx/SobelEdgeM.PNG
+	lyxscale 30
+	scale 35
+
+\end_inset
+
+ 
+\begin_inset Graphics
+	filename Report/Lyx/PrewittedgeM.PNG
+	lyxscale 30
+	scale 35
+
+\end_inset
+
+ 
+\begin_inset Graphics
+	filename Report/Lyx/RobertsEdgeM.PNG
+	lyxscale 30
+	scale 35
+
+\end_inset
+
+ 
+\begin_inset Graphics
+	filename Report/Lyx/CannyEdgeM.PNG
+	lyxscale 30
+	scale 35
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection*
-2.8.Hough Transform
+2.8.
+ Hough Transform
+\end_layout
+
+\begin_layout Standard
+The Hough transform is a feature extraction technique used in image analysis,
+ computer vision, and digital image processing.The purpose of the technique
+ is to find imperfect instances of objects within a certain class of shapes
+ by a voting procedure.
+ The classical Hough transform was concerned with the identification of
+ lines in the image, but later the Hough transform has been extended to
+ identifying positions of arbitrary shapes, most commonly circles or ellipses.
+ Here we specify 
+\begin_inset Formula $rgb2gray$
+\end_inset
+
+ as colorspace.
+\end_layout
+
+\begin_layout Subsubsection*
+2.8.1.
+ Lines extraction using Hough Transform
+\end_layout
+
+\begin_layout Standard
+To extract lines using Hough transform, click on the arrow then choose 
+\begin_inset Formula $Lines\,extraction$
+\end_inset
+
+ inside the 
+\begin_inset Formula $HoughTransform$
+\end_inset
+
+ box.
+ See the result in figure 9
+\end_layout
+
+\begin_layout Subsubsection*
+2.8.2.
+ Circles extraction using Hough Transform
+\end_layout
+
+\begin_layout Standard
+To extract lines using Hough transform, click on the arrow then choose 
+\begin_inset Formula $Circles\,extraction$
+\end_inset
+
+ inside the 
+\begin_inset Formula $HoughTransform$
+\end_inset
+
+ box.
+ See the result in figure 9
+\end_layout
+
+\begin_layout Standard
+Figure 9: Lines extraction and Circles extraction using Hough Transform
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename Report/Lyx/HoughM.PNG
+	lyxscale 30
+	scale 40
+
+\end_inset
+
+ 
+\begin_inset Graphics
+	filename Report/Lyx/HoughCrM.PNG
+	lyxscale 30
+	scale 40
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection*
 2.9.
  Corner extraction 
+\end_layout
+
+\begin_layout Standard
+You must specify 
+\begin_inset Formula $rgb2gray$
+\end_inset
+
+ as colorspace then inside the 
+\begin_inset Formula $Corner\,extraction$
+\end_inset
+
+ box , then click on the arrow then choose 
+\begin_inset Formula $Harris$
+\end_inset
+
+ or 
+\begin_inset Formula $FAST$
+\end_inset
+
+ .
+ box.
+ See the result in figure 10
+\end_layout
+
+\begin_layout Standard
+Figure 10: Harris and FAST corner extraction 
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename Report/Lyx/cornerHarrisM.PNG
+	lyxscale 30
+	scale 40
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename Report/Lyx/cornerFAstM.PNG
+	lyxscale 30
+	scale 40
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection*
